@@ -1,7 +1,7 @@
 # Some-Lab-Assignment
 (Lab Assignment)
 
-(Added a few chnges to it)
+(Added a few changes to it)
 
 #### Banking System with OOP:
 
