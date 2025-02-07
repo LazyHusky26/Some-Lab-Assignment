@@ -69,6 +69,7 @@ public class Bank{
             }
             else{
                 System.out.println("Insufficient initial deposit.");
+                System.exit(0);
             }
         }
 
@@ -82,6 +83,7 @@ public class Bank{
             }
             else{
                 System.out.println("Insufficient initial deposit.");
+                System.exit(0);
             }
         }
         

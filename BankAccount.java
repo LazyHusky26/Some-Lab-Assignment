@@ -10,37 +10,37 @@ public abstract class BankAccount{
             balance += amount;
             System.out.println("Deposit Successful");
         }
-        else {
+        else{
             System.out.println("Invalid Deposit Amount");
         }
     }
 
-    public void withdraw(double amount) {
+    public void withdraw(double amount){
         if(amount <= 0){
             System.out.println("Invalid Withdrawal Amount");
             return;
         }
 
-        if(balance >= amount) {
+        if(balance >= amount){
             balance -= amount;
             System.out.println("Withdrawal successful");
         }
-        else {
+        else{
             System.out.println("Insufficient balance for withdrawal.");
         }
     }
 
-    public void checkBalance() {
+    public void checkBalance(){
         System.out.println("Current Balance: $" + balance);
     }
 
     public abstract void calculateInterest();
 
-    public double getBalance() {
+    public double getBalance(){
         return balance;
     }
 
-    protected void setBalance(double balance) {
+    protected void setBalance(double balance){
         this.balance = balance;
     }
 }

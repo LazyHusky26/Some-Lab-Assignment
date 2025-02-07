@@ -1,17 +1,17 @@
-public class CurrentAccount extends BankAccount {
+public class CurrentAccount extends BankAccount{
     private static double penalty = 50;
     private static double min_bal = 500;
 
-    public CurrentAccount(double initialBalance) {
+    public CurrentAccount(double initialBalance){
         super(initialBalance);
     }
 
     @Override
-    public void calculateInterest() {
+    public void calculateInterest(){
     }
 
     @Override
-    public void withdraw(double amount) {
+    public void withdraw(double amount){
         super.withdraw(amount);
         if(getBalance() < min_bal) {
             setBalance(getBalance() - penalty);
